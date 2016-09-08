@@ -36,7 +36,7 @@ class Solution(object):
                 uniqueChars.append(char)
         if len(uniqueChars) == 0:
             return -1
-        else
+        else:
             return s.index(uniqueChars[0])
 
 
