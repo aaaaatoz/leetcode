@@ -11,3 +11,12 @@ Special thanks to @yukuairoy for adding this problem and creating all test cases
 
 Subscribe to see which companies asked this question
 """
+
+class Solution(object):
+    def powerof2(self, number):
+        if number == 2:
+            return True
+        elif number % 2 != 0:
+            return False
+        else:
+            return self.powerof2(int(number/2))
